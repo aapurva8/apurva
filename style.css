@@ -1,0 +1,197 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #140021;
+    color: white;
+}
+
+/* 🔹 Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #2b004a;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: gold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+/* 🔹 Hero */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1519167758481-83f29cdd2c97') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.65);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    color: gold;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+/* 🔹 Buttons */
+.btn {
+    background: gold;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+/* 🔹 About */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Events */
+.events {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.events h2 {
+    color: gold;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #2b004a;
+    width: 260px;
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: gold;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 0 10px 10px;
+}
+
+/* Explore button spacing */
+.explore-btn {
+    margin-top: 20px;
+}
+
+/* 🔹 Contact */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background: #2b004a;
+}
+
+.contact h2 {
+    color: gold;
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #140021;
+}
+
+/* 🔹 Booking Page */
+.booking {
+    text-align: center;
+    padding: 50px;
+}
+
+.booking img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.price {
+    color: gold;
+    font-size: 22px;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
